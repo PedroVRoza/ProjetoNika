@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-board{
+    width: 100%;
+    height: 500px;
+    border-bottom: 30px solid #1f151c;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#800080, #e0bcdd);
+}
+.BarbaNegra{
+    position: absolute;
+    bottom: -14%;
+    width: 400px;
+    animation: BarbaNegra-animation 5s infinite linear;
+}
+
+.Luffy{
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+}
+.jump{
+    animation: jump 500ms ease-out ;
+}
+.zeus{
+    position: absolute;
+    width: 200px;
+    margin: 0;
+    animation: zeus-animation 15s infinite linear;
+
+}
+
+@keyframes BarbaNegra-animation{
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+}
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 200px; 
+    }
+    50%{
+        bottom: 200px; 
+    }
+    60%{
+        bottom: 200px; 
+    }
+    100%{
+        bottom: 0;
+    }
+}
+@keyframes zeus-animation{
+    from{
+        right: -80px;
+    }
+    to{
+        right: 100%;
+    }
+
+}
